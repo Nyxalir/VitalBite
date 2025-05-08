@@ -71,11 +71,11 @@
     <!-- ========== MISIÓN Y VISIÓN ========== -->
     <section class="section section--mision-vision" id="nosotros">
         <div class="container">
-            <h2 class="section__title">Nuestra <span>visión</span> y <span>misión</span></h2>
+            <h2 class="section__title">Nuestra <span>visión</span> y <span class="brown">misión</span></h2>
             <div class="mision-vision__grid">
                 <div class="container info__content">
                     <div class="info__text">
-                        <h3 class="section__title align__Start">Visión</h3>
+                        <h3 class="section__title align__Start"><span>Visión</span></h3>
                         <p>
                             Ser la app líder en nutrición digital personalizada en Latinoamérica, reconocida por su impacto
                             positivo en la salud
@@ -91,7 +91,7 @@
                         <img src="assets/img/mision-icon.png" alt="Misión" />
                     </div>
                     <div class="info__text">
-                        <h3 class="section__title align__Start">Misión</h3>
+                        <h3 class="section__title align__Start"><span class="brown">Misión</span></h3>
                         <p>
                             Fomentar una alimentación saludable a través de la tecnología, ofreciendo a cada usuario una
                             guía personalizada basada
@@ -107,28 +107,28 @@
     <!-- ========== CÓMO AYUDAMOS ========== -->
     <section class="section section--ayuda" id="ayuda">
         <div class="container">
-            <h2 class="section__title">¿Cómo te podemos ayudar?</h2>
-            <div class="ayuda__grid">
-                <div class="ayuda__item">
-                    <img src="assets/img/menu-icon.svg" alt="Menú personalizado" />
-                    <ul>
-                        <li>Menús personalizados</li>
-                        <li>Evaluación del estado físico</li>
-                        <li>Planes de alimentación</li>
-                        <li>Recetas detalladas</li>
-                        <li>Orientaciones</li>
-                    </ul>
-                </div>
-                <div class="ayuda__item">
-                    <img src="assets/img/datos-icon.svg" alt="Datos usuario" />
-                    <p>
-                        Mediante datos básicos como: edad, peso, estatura y estado de salud, desarrollamos menús
-                        personalizados para ti.
-                    </p>
-                </div>
+          <h2 class="section__title">¿Cómo te podemos ayudar?</h2>
+          <div class="ayuda__interactive">
+            <!-- Lista de opciones (gatillos) -->
+            <div class="ayuda__list">
+              <ul>
+                <li data-id="0" class="ayuda__item active">Menús personalizados</li>
+                <li data-id="1" class="ayuda__item">Evaluación física</li>
+                <li data-id="2" class="ayuda__item">Planes alimenticios</li>
+                <li data-id="3" class="ayuda__item">Recetas paso a paso</li>
+                <li data-id="4" class="ayuda__item">Orientaciones médicas</li>
+              </ul>
             </div>
+      
+            <!-- Panel dinámico de contenido -->
+            <div class="ayuda__panel">
+              <img src="assets/img/ayuda-0.png" alt="Contenido ayuda" class="ayuda__img" />
+              <p class="ayuda__desc">Te damos menús adaptados a tu estilo de vida, gustos y necesidades nutricionales.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <!-- ========== SALUD ========== -->
     <section class="section section--salud">
