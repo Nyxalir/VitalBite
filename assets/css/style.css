@@ -540,6 +540,77 @@ P {
 }
 
 
+/* ========== FOOTER ========== */
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 3rem 1rem 1rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.footer__logo img {
+  width: 40px;
+  height: auto;
+}
+
+.footer__links h4,
+.footer__social h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__links a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.social__icons a {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.social__icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+
 /* Rewsponsi */
 @media (max-width: 768px) {
   .ayuda__interactive {
