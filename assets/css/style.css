@@ -487,6 +487,60 @@ P {
   margin-bottom: 2rem;
 }
 
+/* ========== PLANES ========== */
+.section--planes {
+  background-color: var(--color-secondary);
+  text-align: center;
+}
+
+.planes__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.plan__card {
+  background-color: var(--color-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plan__card img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.plan__card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.plan__card p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+.plan__card span {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+
+/* Rewsponsi */
 @media (max-width: 768px) {
   .ayuda__interactive {
     flex-direction: column;
