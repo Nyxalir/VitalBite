@@ -395,7 +395,7 @@ P {
 .section--salud {
   display: grid;
   place-items: center;
-  height: 80vh;
+  height: 100vh;
   padding: 0 6rem 0 10rem;
 }
 
@@ -491,6 +491,7 @@ P {
 .section--planes {
   background-color: var(--color-secondary);
   text-align: center;
+  height: 100vh;
 }
 
 .planes__grid {
@@ -501,10 +502,8 @@ P {
 }
 
 .plan__card {
-  background-color: var(--color-bg);
   padding: 2rem;
   border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: var(--transition);
   display: flex;
   flex-direction: column;
@@ -518,7 +517,6 @@ P {
 
 .plan__card img {
   max-width: 100%;
-  border-radius: var(--radius);
   margin-bottom: 1rem;
 }
 
@@ -539,11 +537,39 @@ P {
   color: var(--color-text);
 }
 
+.plan__card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.plan__card p {
+  font-size: 1rem;
+  color: var(--color-muted);
+  margin-bottom: 1.25rem;
+}
+
+.btn--cta-small {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.btn--cta-small:hover {
+  background-color: #27642b;
+}
+
 
 /* ========== FOOTER ========== */
 .footer {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.085);
   padding: 3rem 1rem 1rem;
 }
 
@@ -558,14 +584,15 @@ P {
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  font-weight: 700;
-  font-size: 1.25rem;
+  justify-content: center;
+  height: 60px;
+  width: auto;
 }
 
 .footer__logo img {
-  width: 40px;
-  height: auto;
+  width: auto;
+  height: 100%;
+  
 }
 
 .footer__links h4,
@@ -585,7 +612,7 @@ P {
 }
 
 .footer__links a {
-  color: var(--color-secondary);
+  color: var(--color-muted);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -607,7 +634,7 @@ P {
 .footer__bottom {
   text-align: center;
   font-size: 0.9rem;
-  color: #e0e0e0;
+  color: #b6b6b6;
 }
 
 
