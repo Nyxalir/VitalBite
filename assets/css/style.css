@@ -240,29 +240,32 @@ P {
 
 .hero__img {
   position: absolute;
-  width: 120px;
+  width: 300px;
   height: auto;
   object-fit: contain;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 }
 
-.hero__img--top-left {
-  top: 2rem;
-  left: 1rem;
+.hero__img-top {
+  top: 0rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 600px;
 }
 
-.hero__img--top-right {
-  top: 2rem;
-  right: 1rem;
+.hero__img-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
-.hero__img--bottom-left {
-  bottom: 2rem;
-  left: 2rem;
-}
-
-.hero__img--bottom-right {
-  bottom: 2rem;
-  right: 2rem;
+.hero__img-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 /* ========== INFO: ¿Qué es la comida saludable? ========== */
@@ -378,13 +381,14 @@ P {
 }
 
 .ayuda__img {
-  max-width: 250px;
+  max-width: 150px;
   height: auto;
   margin-bottom: 1.5rem;
   border-radius: var(--radius);
 }
 
 .ayuda__desc {
+  width: 350px;
   font-size: 1.1rem;
   color: var(--color-muted);
   line-height: 1.6;
