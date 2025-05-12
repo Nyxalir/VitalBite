@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fuente ejemplo, puedes cambiarla luego -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="container header__content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="VitalBite logo" />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li><a href="../pages/menu.html">Menú</a></li>
+                    <li><a href="../pages/recipes.html">Recetas</a></li>
+                    <li><a href="../pages/aboutUs.html">Nosotros</a></li>
+                    <li><a href="../pages/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="../pages/logIn.html" class="btn btn--login">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== SECTIONS ========== -->
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="container hero__content">
+            <h1 class="hero__title">Tu menú personalizado está casi listo</h1>
+            <p class="hero__subtitle">
+                Ayúdanos con los siguientes datos para calcular tu IMC (Índice de Masa Corporal) y poder diseñar el plan
+                de alimentación perfecto para ti.
+            </p>
+
+            <div class="hero-container">
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="gender">Género:</label>
+                            <select id="gender">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="femenino">48 tipos de gays</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="age">Edad:</label>
+                            <input type="number" id="age" min="1" max="150" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="height">Estatura:</label>
+                            <input type="text" id="height" placeholder="Ej. 1.78m" />
+                        </div>
+                        <div class="form-field">
+                            <label for="weight">Peso:</label>
+                            <input type="text" id="weight" placeholder="Ej. 85kg" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field full-width">
+                            <label for="health">Estado de salud:</label>
+                            <select id="health">
+                                <option>Sin condiciones</option>
+                                <option>Diabético</option>
+                                <option>Hipertensión</option>
+                                <option>Otra</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imc-display">
+                    <div class="imc-value">
+                        <div class="imc-number">26.8</div>
+                        <p>Índice de masa corporal</p>
+                    </div>
+                    <div class="imc-bar-wrapper">
+                        <div class="imc-indicator">Sobrepeso</div>
+                        <div class="imc-bar"></div>
+                        <div class="imc-labels">
+                            <span><span class="color-box low"></span> Bajo peso</span>
+                            <span><span class="color-box normal"></span> Normal</span>
+                            <span><span class="color-box overweight"></span> Sobrepeso</span>
+                            <span><span class="color-box obese"></span> Obeso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contacto">
+        <div class="container footer__content">
+            <div class="footer__logo">
+                <img src="../assets/img/logo.svg" alt="VitalBite logo" />
+            </div>
+            <div class="footer__links">
+                <h4>Enlaces de ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h4>Síguenos en:</h4>
+                <div class="social__icons">
+                    <a href="#"><img src="../assets/img/icon-instagram.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="../assets/img/icon-facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="../assets/img/icon-whatsapp.svg" alt="WhatsApp" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>VitalBite 2025 – Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/calcularIMC.js"></script>
+</body>
+
+</html>
