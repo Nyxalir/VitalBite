@@ -17,13 +17,13 @@ function calcularIMC() {
         posicion = 10;
     } else if (imc < 25) {
         categoria = "Normal";
-        posicion = 35;
+        posicion = 37;
     } else if (imc < 30) {
         categoria = "Sobrepeso";
-        posicion = 60;
+        posicion = 65;
     } else {
         categoria = "Obeso";
-        posicion = 85;
+        posicion = 90;
     }
 
     imcValor.textContent = imcRedondeado;

@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             <div class="header__actions">
-                <a href="../pages/logIn.html" class="btn btn--login">Iniciar sesión</a>
+                <a href="logIn.html" class="btn btn--login">Iniciar sesión</a>
             </div>
         </div>
     </header>
@@ -53,12 +53,11 @@
                             <select id="gender">
                                 <option value="masculino">Masculino</option>
                                 <option value="femenino">Femenino</option>
-                                <option value="femenino">48 tipos de gays</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <label for="age">Edad:</label>
-                            <input type="number" id="age" min="1" max="150" />
+                            <input type="number" id="age" min="1" max="150" placeholder="Ej. 21 años" />
                         </div>
                     </div>
                     <div class="form-row">
@@ -86,11 +85,11 @@
 
                 <div class="imc-display">
                     <div class="imc-value">
-                        <div class="imc-number">26.8</div>
+                        <div class="imc-number">0.0</div>
                         <p>Índice de masa corporal</p>
                     </div>
                     <div class="imc-bar-wrapper">
-                        <div class="imc-indicator">Sobrepeso</div>
+                        <div class="imc-indicator">Bajo Peso</div>
                         <div class="imc-bar"></div>
                         <div class="imc-labels">
                             <span><span class="color-box low"></span> Bajo peso</span>
@@ -105,6 +104,45 @@
         </div>
 
     </section>
+
+    <!-- ========== RECOMMENDED MENU ========== -->
+    <section class="menu">
+        <div class="container menu__content">
+            <div class="menu__header">
+                <h2 class="menu__title">¡Tu menú recomendado esta listo!</h2>
+                <div class="menu__filters">
+                    <select id="menu-type">
+                        <option value="todos">Todos los tipos</option>
+                        <option value="hipocalórico">Hipocalórico</option>
+                        <option value="balanceado">Balanceado</option>
+                        <option value="proteico">Proteico</option>
+                    </select>
+                    <select id="menu-day">
+                        <option value="lunes">Lunes</option>
+                        <option value="martes">Martes</option>
+                        <option value="miércoles">Miércoles</option>
+                        <option value="jueves">Jueves</option>
+                        <option value="viernes">Viernes</option>
+                        <option value="sábado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="banner--logIn">
+                <div class="content--img">
+                    <img src="../assets/img/candado.png" alt="icon candado">
+                </div>
+                <div class="content--info">
+                    <h3>Inicia sesión</h3>
+                    <p>Inicia sesión para desbloquear todo nuestro contenidol</p>
+                    <a href="logIn.html" class="btn btn--login">Iniciar sesión</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- ========== FOOTER ========== -->
     <footer class="footer" id="contacto">
         <div class="container footer__content">

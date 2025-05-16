@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fuente ejemplo, puedes cambiarla luego -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="container header__content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="VitalBite logo" />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li><a href="../pages/menu.html">Menú</a></li>
+                    <li><a href="../pages/recipes.html">Recetas</a></li>
+                    <li><a href="../pages/aboutUs.html">Nosotros</a></li>
+                    <li><a href="../pages/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="../pages/logIn.html" class="btn btn--login">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== SECTIONS ========== -->
+    <!-- ========== AUTH ========== -->
+    <section class="auth">
+        <div class="auth__container">
+            <h2 class="auth__title" id="auth-title">Iniciar Sesión</h2>
+
+            <form class="auth__form" id="login-form">
+                <input type="email" placeholder="Correo electrónico" required />
+                <input type="password" placeholder="Contraseña" required />
+                <button type="submit">Entrar</button>
+            </form>
+
+            <form class="auth__form hidden" id="register-form">
+                <input type="text" placeholder="Nombre completo" required />
+                <input type="email" placeholder="Correo electrónico" required />
+                <input type="password" placeholder="Contraseña" required />
+                <button type="submit">Registrarse</button>
+            </form>
+
+            <p class="auth__toggle">
+                ¿No tienes cuenta?
+                <a href="#" id="toggle-auth">Regístrate</a>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/calcularIMC.js"></script>
+    <script src="../assets/js/logIn.js"></script>
+</body>
+
+</html>
